@@ -6,10 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="edu.wpi.khakikappas.views.HomeController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.khakikappas.views.HomeController">
     <children>
         <GridPane layoutX="177.0" layoutY="68.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E0734;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columnConstraints>
@@ -25,7 +22,7 @@
             </rowConstraints>
             <children>
                 <Label text="Jeff's Page!" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                <Button mnemonicParsing="false" onAction="#returnHome" text="Home" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                <Button fx:id="homeButton" mnemonicParsing="false" onAction="#returnHome" text="Home" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
             </children>
         </GridPane>
     </children>
