@@ -22,14 +22,9 @@ public class HomeController {
   @FXML
   private void switchToAJ(ActionEvent actionEvent) throws IOException {
     Stage stage = (Stage) AJRedirect.getScene().getWindow();
-    Parent root =
-        FXMLLoader.load(
-            getClass()
-                .getClassLoader()
-                .getResource("/main/resources/edu/wpi/khakikappas/views/AJ.fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("AJ.fxml"));
     Scene scene = new Scene(root);
     stage.setScene(scene);
-    stage.showAndWait();
   }
 
   @FXML
