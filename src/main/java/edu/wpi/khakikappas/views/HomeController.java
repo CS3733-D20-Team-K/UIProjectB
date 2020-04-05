@@ -8,8 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 public class HomeController {
@@ -42,6 +40,14 @@ public class HomeController {
   public void switchToJeff(ActionEvent actionEvent) throws IOException {
     Stage stage = (Stage) JeffRedirect.getScene().getWindow();
     Parent root = FXMLLoader.load(getClass().getResource("Jeff.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+  }
+
+  @FXML
+  private void returnHome(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
     Scene scene = new Scene(root);
     stage.setScene(scene);
   }
