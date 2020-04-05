@@ -11,10 +11,8 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class HomeController {
-  @FXML
-  private Label actionField;
-  @FXML
-  private Button AJRedirect, JeffRedirect, MattRedirect;
+  @FXML private Label actionField;
+  @FXML private Button AJRedirect, JeffRedirect, MattRedirect;
 
   @FXML
   private void doNothing(ActionEvent actionEvent) {
