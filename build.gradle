@@ -21,10 +21,10 @@ repositories {
         url 'https://apisite.crmyers.dev/maven'
     }
 
-    maven {
-        url "https://jitpack.io"
-        credentials { username authToken }
-    }
+//    maven {
+//        url "https://jitpack.io"
+//        credentials { username authToken }
+//    }
 }
 
 dependencies {
