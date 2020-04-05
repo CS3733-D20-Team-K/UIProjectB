@@ -29,6 +29,7 @@
             <Button fx:id="JeffRedirect" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToJeff" text="Jeff" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
             <Button fx:id="MattRedirect" mnemonicParsing="false" onAction="#switchToMatt" text="Matt" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
             <Button fx:id="RyanRedirect" mnemonicParsing="false" onAction="#switchToRyan" text="Ryan" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+             <Button fx:id="GregRedirect" mnemonicParsing="false" onAction="#switchToGreg" text="Greg" GridPane.halignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
          </children>
       </GridPane>
    </children>
