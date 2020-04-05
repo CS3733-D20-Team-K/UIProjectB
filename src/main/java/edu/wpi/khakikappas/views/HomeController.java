@@ -8,11 +8,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 public class HomeController {
-  @FXML private Label actionField;
+
   @FXML private Button AJRedirect, JeffRedirect, MattRedirect;
+  @FXML private Label actionField, someTextLabel;
 
   @FXML
   private void doNothing(ActionEvent actionEvent) {
@@ -36,10 +39,33 @@ public class HomeController {
   }
 
   @FXML
+  private void switchToGreg(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Greg.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+  }
+
+  @FXML
   public void switchToJeff(ActionEvent actionEvent) throws IOException {
     Stage stage = (Stage) JeffRedirect.getScene().getWindow();
     Parent root = FXMLLoader.load(getClass().getResource("Jeff.fxml"));
     Scene scene = new Scene(root);
     stage.setScene(scene);
+  }
+
+  @FXML
+  private void returnHome(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+  }
+
+  @FXML
+  public void someText(KeyEvent event) {
+    TextField t = (TextField) event.getSource();
+    if (t.getText().equals("Some Text"))
+      someTextLabel.setText("You successfully entered Some Text");
   }
 }
