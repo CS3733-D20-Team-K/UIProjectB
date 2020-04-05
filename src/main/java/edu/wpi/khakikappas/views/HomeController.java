@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class HomeController {
   @FXML private Label actionField;
-  @FXML private Button AJRedirect,JeffRedirect;
+  @FXML private Button AJRedirect,JeffRedirect, MattRedirect;
 
   @FXML
   private void doNothing(ActionEvent actionEvent) {
@@ -28,7 +28,12 @@ public class HomeController {
   }
 
   @FXML
-  private void returnHome(ActionEvent actionEvent) {}
+  private void switchToMatt(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) MattRedirect.getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Matt.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+  }
 
   @FXML
   public void switchToJeff(ActionEvent actionEvent) throws IOException {
