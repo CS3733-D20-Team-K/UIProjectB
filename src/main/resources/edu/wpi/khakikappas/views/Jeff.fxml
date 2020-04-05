@@ -30,6 +30,13 @@
                <font>
                   <Font size="46.0" />
                </font></Button>
+                <TextField fx:id="typesomething" minWidth="-Infinity" prefHeight="26.0" prefWidth="136.0" GridPane.rowIndex="3" />
+            <Label text="TypeSomething" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+            <CheckBox fx:id="checkbox" mnemonicParsing="false" onAction="#congrat" text="Done" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="congrats" text="Congratulations" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
             </children>
         </GridPane>
     </children>
