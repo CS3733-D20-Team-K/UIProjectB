@@ -25,7 +25,7 @@
             </rowConstraints>
             <children>
                 <Label text="AJ's Page!" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                <Button mnemonicParsing="false" onAction="#returnHome" text="Home" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                <Button fx:id="homeButton" mnemonicParsing="false" onAction="#returnHome" text="Home" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
             </children>
         </GridPane>
     </children>
