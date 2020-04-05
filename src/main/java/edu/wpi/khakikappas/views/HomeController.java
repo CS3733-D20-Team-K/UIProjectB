@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 public class HomeController {
   @FXML private Label actionField;
   @FXML private Button AJRedirect;
+  @FXML private Button RyanRedirect;
 
   @FXML
   private void doNothing(ActionEvent actionEvent) {
@@ -27,4 +28,11 @@ public class HomeController {
     stage.setScene(scene);
   }
 
+  @FXML
+  private void switchToRyan(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) RyanRedirect.getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Ryan.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+  }
 }
