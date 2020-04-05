@@ -45,9 +45,9 @@ public class HomeController {
   }
 
   @FXML
-  private void returnHome(ActionEvent actionEvent) throws IOException {
-    Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
-    Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+  private void switchToRyan(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) RyanRedirect.getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Ryan.fxml"));
     Scene scene = new Scene(root);
     stage.setScene(scene);
   }
