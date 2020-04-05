@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="edu.wpi.khakikappas.views.HomeController"
+            fx:controller="edu.wpi.khakikappas.views.AJController"
             prefHeight="400.0" prefWidth="600.0">
     <children>
         <GridPane layoutX="177.0" layoutY="68.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E0734;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
