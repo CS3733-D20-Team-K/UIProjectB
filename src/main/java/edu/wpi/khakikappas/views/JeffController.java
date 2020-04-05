@@ -11,13 +11,13 @@ import javafx.stage.Stage;
 
 public class JeffController {
 
-    @FXML private Button homeButton;
+  @FXML private Button homeButton;
 
-    @FXML
-    private void returnHome(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) homeButton.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-    }
+  @FXML
+  private void returnHome(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) homeButton.getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+  }
 }
