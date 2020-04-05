@@ -8,9 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 public class HomeController {
+
   @FXML private Label actionField;
   @FXML private Button AJRedirect, JeffRedirect, MattRedirect, RyanRedirect;
 
@@ -39,14 +42,6 @@ public class HomeController {
   public void switchToJeff(ActionEvent actionEvent) throws IOException {
     Stage stage = (Stage) JeffRedirect.getScene().getWindow();
     Parent root = FXMLLoader.load(getClass().getResource("Jeff.fxml"));
-    Scene scene = new Scene(root);
-    stage.setScene(scene);
-  }
-
-  @FXML
-  public void switchToRyan(ActionEvent actionEvent) throws IOException {
-    Stage stage = (Stage) RyanRedirect.getScene().getWindow();
-    Parent root = FXMLLoader.load(getClass().getResource("Ryan.fxml"));
     Scene scene = new Scene(root);
     stage.setScene(scene);
   }
