@@ -26,6 +26,7 @@
             <Label fx:id="actionField" text="Add a Button to one of the panes below" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onAction="#doNothing" text="Example" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
             <Button fx:id="AJRedirect" mnemonicParsing="false" onAction="#switchToAJ" text="AJ" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="MattRedirect" mnemonicParsing="false" onAction="#switchToMatt" text="Matt" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>
