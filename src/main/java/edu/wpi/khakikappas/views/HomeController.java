@@ -51,4 +51,12 @@ public class HomeController {
     Scene scene = new Scene(root);
     stage.setScene(scene);
   }
+
+  @FXML
+  private void switchToGreg(ActionEvent actionEvent) throws IOException {
+    Stage stage = (Stage) RyanRedirect.getScene().getWindow();
+    Parent root = FXMLLoader.load(getClass().getResource("Greg.fxml"));
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+  }
 }
