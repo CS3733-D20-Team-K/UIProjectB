@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -8,7 +9,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.khakikappas.views.JeffController">
     <children>
-        <GridPane layoutX="177.0" layoutY="68.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E0734;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <GridPane layoutX="177.0" layoutY="68.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d90000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -21,8 +22,21 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Label text="Jeff's Page!" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                <Button fx:id="homeButton" mnemonicParsing="false" onAction="#returnHome" text="Home" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                <Label text="Jeff's Page!" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="39.0" />
+               </font></Label>
+                <Button fx:id="homeButton" mnemonicParsing="false" onAction="#returnHome" text="Home" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="46.0" />
+               </font></Button>
+                <TextField fx:id="typesomething" minWidth="-Infinity" prefHeight="26.0" prefWidth="136.0" GridPane.rowIndex="3" />
+            <Label text="TypeSomething" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+            <CheckBox fx:id="checkbox" mnemonicParsing="false" onAction="#congrat" text="Done" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="congrats" text="Congratulations" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
             </children>
         </GridPane>
     </children>
